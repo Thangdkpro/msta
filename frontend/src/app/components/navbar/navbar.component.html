@@ -1,0 +1,28 @@
+
+
+<!-- NEW NAV BAR -->
+<nav class="navbar navbar-inverse  w3-bar-block w3-collapse w3-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">PT Book Trading </a>
+    </div>
+    
+    <form class="navbar-form navbar-left">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" >
+      </div>
+      <button type="submit" class="btn btn-md btn-default">Go</button>
+    </form>
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right">
+            
+            <li><a [routerLinkActive]="['active']" [routerLink]="['/']" (click)="logout()"><span class="glyphicon glyphicon-log-out" ></span> Logout</a></li>
+
+            
+            
+          </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
